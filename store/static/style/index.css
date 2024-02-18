@@ -1,0 +1,41 @@
+ .row{
+    background-color: rgb(246, 242, 244);
+}
+
+.list-group 
+{
+    background-color: rgb(226, 226, 232);
+}
+.col-lg-3  {
+    background-color:rgb(233, 241, 238) ;
+}
+.col-lg-9{
+    background-color: rgb(245, 250, 251);
+}
+
+.btn{
+ background-color:rgb(70, 73, 75);
+}
+.btn-outline-success{
+    color:rgb(243, 235, 235);
+} 
+.list-group-item-action{
+background-color: rgb(70, 73, 75);
+/* background-color:rgb(44, 46, 45); */
+}
+.btn-block {
+    background-color: black;
+}
+.btn:hover{
+    background-color: rgb(4, 4, 4);
+}
+.btn:active{
+background-color: brown;
+}
+* .row .no-gutters{
+    background-color: black;
+} 
+/* .active, .btn:hover {
+    background-color: #666;
+    color: white;
+  } */

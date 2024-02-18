@@ -1,0 +1,26 @@
+ /* .nav{
+  background-color: rgb(221, 218, 232);
+  }
+   * */
+.nav-link{
+  color: beige;
+}
+
+.navbar{
+  background-color:rgb(70, 75, 74);
+}
+
+
+.nav-item {
+  color: rgb(236, 233, 233);
+}
+.one-edge-shadow {
+  box-shadow: 0 8px 2px -5px rgb(3, 3, 3) ;
+}
+.display-8{
+ font-weight: 200;
+ font-size: 30px;
+}
+.badge {
+    background-color:rgb(10, 9, 9);
+}
