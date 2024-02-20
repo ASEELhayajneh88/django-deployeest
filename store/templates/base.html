@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 {% load static %}
 
 <head>
@@ -21,7 +22,30 @@
 <body>
   <!-- navbar -->
 
-<nav class="one-edge-shadow
+
+
+	<header class="header">
+    {% comment %} <img src="https://th.bing.com/th/id/OIP.QCQNlq2ngXBd6dUkQxIlpgHaID?w=158&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" style="width:50px;height:50px,color:text-light;"></a> {% endcomment %}
+
+		<h1 class="logo"><a href="/store">Stars Of Moon</a></h1>
+      <ul class="main-nav">
+
+          <li><a href="/store">Store</a></li>
+          <li><a href="/cart">Cart<span class="badge badge-success">{{request.session.cart.keys|length}}</span></a></li>
+          {% if request.session.customer %}
+
+          <li><a href="/orders">Orders</a></li>
+          <li><a href="/logout">Logout</a></li>
+          {% else %}
+          <li><a href="/signup">Signup</a></li>
+          <li><a href="/login">Login</a></li>
+          {% endif %}
+
+      </ul>
+	</header> 
+ 
+
+{% comment %} <nav class="one-edge-shadow
   navbar navbar-light
   sticky-top navbar 
   navbar-expand-lg
@@ -76,7 +100,7 @@
       </ul>
 
 
-    </div>
+    </div> {% endcomment %}
   </nav>
   <!---->
   {% block content %}{% endblock %}
